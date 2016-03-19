@@ -21,6 +21,7 @@
     "errorhandler": "1.x",
     "express": "4.12.3",
     "lodash": "3.7.0",
+    "method-override": "2.3.5",
     "nconf": "0.6.7",
     "ng-tags-input": "^3.0.0",
     "node-http-proxy": "^0.2.3",
