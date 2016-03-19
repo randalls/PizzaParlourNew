@@ -29,7 +29,8 @@ app.use(require('errorhandler')());
 if (nconf.get('NODE_ENV') === 'local') {
 	logger = { write: function (message) { console.log(message); } }
 } else {
-	logger = fs.createWriteStream(__dirname + '/logs/access_' + nconf.get('NODE_ENV') + '.log', {flags: 'a'});
+	//logger = fs.createWriteStream(__dirname + '/logs/access_' + nconf.get('NODE_ENV') + '.log', {flags: 'a'});
+    logger = { write: function (message) { console.log(message); } }
 }
 
 app.use(require('morgan')(':date :method :url :status', { stream: logger }));
