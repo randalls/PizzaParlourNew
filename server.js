@@ -57,6 +57,7 @@ require('./server/route')(app);
 // ===========================================
 var host = nconf.get('host'),
     server;
-server = app.listen(host.port, host.name, function () {
+//server = app.listen(host.port, host.name, function () {
+server = app.listen(host.port, function() {
     console.log('Express server listening on port ' + server.address().port + ' in ' + app.settings.env + ' mode');
 });
