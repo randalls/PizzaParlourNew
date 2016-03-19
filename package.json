@@ -27,6 +27,7 @@
     "nconf": "0.8.4",
     "ng-tags-input": "^3.0.0",
     "node-http-proxy": "^0.2.3",
+    "secure-keys": "1.0.0",
     "winston": "^1.0.0",
     "yargs": "4.3.1"
   },
