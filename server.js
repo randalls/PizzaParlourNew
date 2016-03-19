@@ -23,7 +23,7 @@ app.set('env', nconf.get('NODE_ENV'));
 // middleware.
 app.use(require('body-parser')());
 app.use(require('method-override')());
-// app.use(require('cookie-parser')());
+app.use(require('cookie-parser')());
 app.use(require('errorhandler')());
 
 if (nconf.get('NODE_ENV') === 'local') {
@@ -32,7 +32,7 @@ if (nconf.get('NODE_ENV') === 'local') {
 	logger = fs.createWriteStream(__dirname + '/logs/access_' + nconf.get('NODE_ENV') + '.log', {flags: 'a'});
 }
 
-// app.use(require('morgan')(':date :method :url :status', { stream: logger }));
+app.use(require('morgan')(':date :method :url :status', { stream: logger }));
 
 // server configurations.
 app.set('port', nconf.get('PORT'));
