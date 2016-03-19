@@ -36,7 +36,8 @@ if (nconf.get('NODE_ENV') === 'local') {
 app.use(require('morgan')(':date :method :url :status', { stream: logger }));
 
 // server configurations.
-app.set('port', nconf.get('PORT'));
+//app.set('port', nconf.get('PORT'));
+app.set('port', Number(process.env.PORT || nconf.get('PORT')));
 
 // xsrf protection
 //app.use(require('csurf')({value: require('./core/xsrf').token}));
