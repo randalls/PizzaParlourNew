@@ -12,7 +12,7 @@ gulp.task('build', function (done) {
         'build:pizza-app',
         'copy:i18n',
         'copy:components',
-        'optimize:image',
+        //'optimize:image',
         done
     );
 });
