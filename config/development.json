@@ -1,0 +1,7 @@
+{
+    "host": {
+        "name": "localhost",
+        "port": 1234
+    },
+    "defaultLocale": "en"
+}

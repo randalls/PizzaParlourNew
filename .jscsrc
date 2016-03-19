@@ -1,0 +1,18 @@
+{
+    "preset": "google",
+    "fileExtensions": [ ".js", "jscs" ],
+    "maximumLineLength": {
+        "value": 180,
+        "allowRegex": true
+    },
+    "validateLineBreaks": null,
+    "validateIndentation": null,
+    "disallowKeywords": ["with"],
+    "disallowMultipleVarDecl": null,
+    "disallowSpacesInsideObjectBrackets": null,
+    "requireCamelCaseOrUpperCaseIdentifiers": "ignoreProperties",
+    "disallowImplicitTypeConversion": ["string"],
+    "disallowSpacesInFunctionDeclaration": null,
+    "disallowSpacesInAnonymousFunctionExpression": null,
+    "excludeFiles": []
+}
